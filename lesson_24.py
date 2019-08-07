@@ -7,9 +7,9 @@ def Keymaker(k):
       for i in range(k):
         kst.append(1)
       step += 1  
-    else: # второй этап
+    else: # второй и последующие этапы
       for i in range(k):
-        if i%(j+1) != 0:
+        if i%(j+1) == j:
           if kst[i] == 0:
             kst.insert(i,1)
             kst.pop(i+1)
